@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:Open2327RomAdapter-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -422,7 +421,7 @@ U 1 1 59CC2837
 P 4400 3300
 F 0 "P1" V 4500 3250 50  0000 C CNN
 F 1 "CONN_01X04" V 4400 3000 50  0001 C CNN
-F 2 "Sukko:LoosePads-4" H 4400 3300 50  0001 C CNN
+F 2 "Open2327RomAdapter:LoosePads-4" H 4400 3300 50  0001 C CNN
 F 3 "" H 4400 3300 50  0001 C CNN
 	1    4400 3300
 	0    1    1    0   

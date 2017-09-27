@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/sukko/Documents/kicad/Open2327RomAdapter/Open2327RomAdapter.sch)
-    (date "gio 28 set 2017 00:49:26 CEST")
+    (date "gio 28 set 2017 00:59:21 CEST")
     (tool "Eeschema 4.0.7")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -47,7 +47,7 @@
       (tstamp 597BC33A))
     (comp (ref P1)
       (value CONN_01X04)
-      (footprint Sukko:LoosePads-4)
+      (footprint Open2327RomAdapter:LoosePads-4)
       (libsource (lib conn) (part Conn_01x04))
       (sheetpath (names /) (tstamps /))
       (tstamp 59CC2837)))
@@ -147,14 +147,14 @@
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive)))))
   (libraries
-    (library (logical memory)
-      (uri /usr/share/kicad/library/memory.lib))
-    (library (logical Open2327RomAdapter-cache)
-      (uri /home/sukko/Documents/kicad/Open2327RomAdapter/Open2327RomAdapter-cache.lib))
     (library (logical device)
       (uri /usr/share/kicad/library/device.lib))
     (library (logical conn)
-      (uri /usr/share/kicad/library/conn.lib)))
+      (uri /usr/share/kicad/library/conn.lib))
+    (library (logical memory)
+      (uri /usr/share/kicad/library/memory.lib))
+    (library (logical Open2327RomAdapter-cache)
+      (uri /home/sukko/Documents/kicad/Open2327RomAdapter/Open2327RomAdapter-cache.lib)))
   (nets
     (net (code 1) (name "Net-(U1-Pad16)")
       (node (ref U1) (pin 16))
