@@ -36,6 +36,7 @@ To switch between ROMs, you will need one or more switches. Every switch must co
 Open2327RomAdapter is Open Hardware.
 
 ### Thanks
+The following links were useful during the development of this project:
 - https://ist.uwaterloo.ca/~schepers/roms.html
 - https://ist.uwaterloo.ca/~schepers/sockets.html
 - http://smisioto.no-ip.org/elettronica/kicad/kicad.htm
