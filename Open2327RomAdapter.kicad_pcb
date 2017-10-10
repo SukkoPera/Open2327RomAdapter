@@ -190,7 +190,7 @@
       (net 27 "Net-(P1-Pad4)"))
     (pad 2 smd rect (at 1.35 0 270) (size 1.5 1.3) (layers B.Cu B.Paste B.Mask)
       (net 2 VCC))
-    (model Resistors_SMD.3dshapes/R_0805_HandSoldering.wrl
+    (model Resistors_SMD.3dshapes/R_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -223,7 +223,7 @@
       (net 26 "Net-(P1-Pad3)"))
     (pad 2 smd rect (at 1.35 0 270) (size 1.5 1.3) (layers B.Cu B.Paste B.Mask)
       (net 2 VCC))
-    (model Resistors_SMD.3dshapes/R_0805_HandSoldering.wrl
+    (model Resistors_SMD.3dshapes/R_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -256,7 +256,7 @@
       (net 25 "Net-(P1-Pad2)"))
     (pad 2 smd rect (at 1.35 0 270) (size 1.5 1.3) (layers B.Cu B.Paste B.Mask)
       (net 2 VCC))
-    (model Resistors_SMD.3dshapes/R_0805_HandSoldering.wrl
+    (model Resistors_SMD.3dshapes/R_0805.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -624,10 +624,10 @@
     )
   )
 
-  (module Open2327RomAdapter:LoosePads-4 (layer F.Cu) (tedit 597BBF1B) (tstamp 59CC2D65)
+  (module Open2327RomAdapter:LoosePads-4 (layer F.Cu) (tedit 59DD2466) (tstamp 59CC2D65)
     (at 157.988 97.028)
     (path /59CC2837)
-    (fp_text reference P1 (at 0 3.556) (layer F.SilkS)
+    (fp_text reference P1 (at 0 3.556) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value CONN_01X04 (at 0 -3.556) (layer F.Fab) hide
