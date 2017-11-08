@@ -8,6 +8,13 @@ The KERNAL ROM in a Commodore 64 is a 2364 model (8 KB), which comes in a 24-pin
 
 Open2327RomAdapter comes as an adapter PCB that sits inbetween the original socket and the new chip and solves both those problems, by allowing the use of 28-pin EPROMs, which are cheaper and much more common. It also allows the use of EPROMs bigger than the original ROM, with solder pads where switches can be wired to allow the selection of a particular ROM.
 
+### Assembly
+1. Solder the 0805 SMD resistors first. My suggested technique is as follows: put a small blob of solder on one of the pads, then grab a resistor with tweezers, reheat the solder and slide the resistor into it, keeping it flat on the board. Hold it in place with your tweezers and take the iron away. If you didn't place it straight, reheat and correct with the tweezers. Finally solder the other end. It's not that hard, you just need to practice a few times.
+1. Put the pin headers into a solderless breadboard and lay the board on them, with the 0805 resistors facing down (i.e.: you should not see them). Make sure to use the two shortest hole series. Solder into place.
+1. Remove the board from the solderless breadboard. Using flush cutters, cut the top two pins on the right (on the soldering side) so that they are as flush to the board as possible. Repeat with the bottom two pins. Take the socket and do a test fit, it should sit flush to the board.
+1. Turn the board over and solder down the socket. Again, make sure it sits as flush as possible.
+1. You are done! Try to fit the adapter in the socket on your board or solder it down, if you prefer. In both cases, you can trim the pins shorter if you need.
+
 ### Installation
 Open2327RomAdapter has been designed with a Winbond W27C512 (or W27E512, I don't understand what differences they have) EEPROM in mind. This is a 64 KB chip (thus it can hold up to 8 ROM images, more than enough for most needs), which is widely available, cheap and electrically erasable, which avoids the need for a clunky UV-eraser. **This is the only part that was thoroughly tested**.
 
