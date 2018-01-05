@@ -35,10 +35,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "C64 ROM 24 -> EPROM 28 ADAPTER"
-Date "2017-07-29"
-Rev ""
-Comp ""
+Title "Open2327RomAdapter: C64 ROM 24 -> EPROM 28 Pin Adapter"
+Date "2018-01-05"
+Rev "2"
+Comp "SukkoPera"
 Comment1 "https://ist.uwaterloo.ca/~~schepers/sockets.html"
 Comment2 "https://ist.uwaterloo.ca/~~schepers/roms.html"
 Comment3 ""
