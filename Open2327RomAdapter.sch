@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 1 1
 Title "Open2327RomAdapter: C64 ROM 24 -> EPROM 28 Pin Adapter"
 Date "2018-01-05"
-Rev "2"
+Rev "3"
 Comp "SukkoPera"
 Comment1 "https://ist.uwaterloo.ca/~~schepers/sockets.html"
 Comment2 "https://ist.uwaterloo.ca/~~schepers/roms.html"
@@ -57,50 +57,6 @@ F 2 "" H 3550 2600 50  0000 C CNN
 F 3 "" H 3550 2600 50  0000 C CNN
 	1    3550 2600
 	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR05
-U 1 1 596BE63E
-P 10500 1000
-F 0 "#PWR05" H 10500 750 50  0001 C CNN
-F 1 "GND" H 10500 850 50  0000 C CNN
-F 2 "" H 10500 1000 50  0000 C CNN
-F 3 "" H 10500 1000 50  0000 C CNN
-	1    10500 1000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR06
-U 1 1 596BE658
-P 9900 900
-F 0 "#PWR06" H 9900 750 50  0001 C CNN
-F 1 "VCC" H 9900 1050 50  0000 C CNN
-F 2 "" H 9900 900 50  0000 C CNN
-F 3 "" H 9900 900 50  0000 C CNN
-	1    9900 900 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:PWR_FLAG #FLG07
-U 1 1 596BE672
-P 10500 900
-F 0 "#FLG07" H 10500 995 50  0001 C CNN
-F 1 "PWR_FLAG" H 10500 1080 50  0000 C CNN
-F 2 "" H 10500 900 50  0000 C CNN
-F 3 "" H 10500 900 50  0000 C CNN
-	1    10500 900 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:PWR_FLAG #FLG08
-U 1 1 596BE6A2
-P 9900 1000
-F 0 "#FLG08" H 9900 1095 50  0001 C CNN
-F 1 "PWR_FLAG" H 9900 1180 50  0000 C CNN
-F 2 "" H 9900 1000 50  0000 C CNN
-F 3 "" H 9900 1000 50  0000 C CNN
-	1    9900 1000
-	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	4950 4400 2850 4400
@@ -283,10 +239,6 @@ Wire Wire Line
 Wire Wire Line
 	3550 2600 3550 2650
 Wire Wire Line
-	9900 900  9900 1000
-Wire Wire Line
-	10500 900  10500 1000
-Wire Wire Line
 	4250 2450 4400 2450
 Wire Wire Line
 	4250 2550 4500 2550
@@ -434,7 +386,7 @@ L 2364:2364 U1
 U 1 1 5CD86D4D
 P 5400 4950
 F 0 "U1" H 5590 5650 50  0000 C CNN
-F 1 "2364" H 5550 4245 50  0000 C CNN
+F 1 "2364_SOCKET" H 5550 4245 50  0000 C CNN
 F 2 "Open2327RomAdapter:DIP-24_W15.24mm-Notch" H 5400 4950 50  0001 C CNN
 F 3 "DOCUMENTATION" H 5400 4950 50  0001 C CNN
 	1    5400 4950
