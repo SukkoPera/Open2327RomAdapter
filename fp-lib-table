@@ -1,4 +1,3 @@
 (fp_lib_table
-  (lib (name Sukko)(type KiCad)(uri "$(KIPRJMOD)/Sukko.pretty")(options "")(descr ""))
   (lib (name Open2327RomAdapter)(type KiCad)(uri "$(KIPRJMOD)/Open2327RomAdapter.pretty")(options "")(descr ""))
 )
