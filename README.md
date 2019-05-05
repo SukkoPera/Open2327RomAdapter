@@ -1,5 +1,5 @@
 # Open2327RomAdapter
-Open2327RomAdapter is an Open Hardware adapter PCB that allows the use of a 27xxx EPROM in place of a 2364 PROM. This is mainly useful for replacing the KERNAL and other ROMs in Commodore 64 home computers and 1541 drives.
+Open2327RomAdapter is an Open Hardware adapter PCB that allows the use of a 27xxx EPROM in place of a 2364 PROM. This is mainly useful for replacing the KERNAL and other ROMs in VIC-20 and Commodore 64 home computers and 1541 drives.
 
 ![Board](https://raw.githubusercontent.com/SukkoPera/Open2327RomAdapter/master/doc/render-top.png)
 
@@ -33,14 +33,28 @@ Note that where the recommended value is 10k, probably any value between 5k and 
 
 When flashing the (E)EPROM, make sure that every file is exactly 8192 bytes long and just concatenate them. You don't need to use all of the available space, but keep in mind that the unused address lines are pulled high. This means that if you use a 27512 EPROM with a single image and no switches, for instance, the image must be flashed at $E000 (i.e.: as if it was the last of 8 concatenated images).
 
-The adapter has been carefully sized to fit both inside a C64 (tested on a 250425 board) and a 1541 drive. It can usually be installed in the original ROM socket, with no need to desolder it.
+The adapter has been carefully sized to fit both inside a VIC-20 (tested on the KERNAL and BASIC ROMs on an Assy #250403 board) C64 (tested on the KERNAL of an Assy #250425 board) and a 1541 drive. It can usually be installed in the original ROM socket, with no need to desolder it.
 
 To switch between ROMs, you will need one or more switches. Every switch must connect one of the A13-A15 pads to ground when enabled. A ground pad is available on the board, but any ground spot on the C64 board can be used as well, if easier to reach. Since having more than switch can be cumbersome, a rotary switch can be used as well.
 
 **IMPORTANT: ALWAYS TURN YOUR C64 OFF BEFORE MOVING THE ROM SELECTION SWITCH(ES).**
 
 ### License
-Open2327RomAdapter is Open Hardware.
+Open2327RomAdapter is Open Hardware. If you make any modifications to the board, please contribute them back.
+
+### Support the Project
+Since the project is open you are free to get the PCBs made by your preferred manufacturer, however in case you want to support the development, you can order them from PCBWay through this link:
+
+[![PCB from PCBWay](https://www.pcbway.com/project/img/images/frompcbway.png)](https://www.pcbway.com/project/shareproject/Open2327RomAdapter_V2.html)
+
+You get cheap, professionally-made and good quality PCBs, I get some credit that will help with this and [other projects](https://www.pcbway.com/project/member/shareproject/?bmbid=41100). You won't even have to worry about the various PCB options, it's all pre-configured for you!
+
+Also, if you still have to register to that site, [you can use this link](https://www.pcbway.com/setinvite.aspx?inviteid=41100) to get some bonus initial credit (and yield me some more).
+
+Again, if you want to use another manufacturer, feel free to, don't feel obligated :).
+
+### Get Support
+If you need help or have questions, you can join [the official Telegram group](https://t.me/joinchat/HUHdWBC9J9JnYIrvTYfZmg).
 
 ### Thanks
 The following links were useful during the development of this project:
