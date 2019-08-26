@@ -16,7 +16,7 @@ Open2327RomAdapter comes as an adapter PCB that sits inbetween the original sock
 1. You are done! Try to fit the adapter in the socket on your board or solder it down, if you prefer. In both cases, you can trim the pins shorter if you need.
 
 ### Installation
-Open2327RomAdapter has been designed with a Winbond W27C512 (or W27E512, I don't understand what differences they have) EEPROM in mind. This is a 64 KB chip (thus it can hold up to 8 ROM images, more than enough for most needs), which is widely available, cheap and electrically erasable, which avoids the need for a clunky UV-eraser. **This is the only part that was thoroughly tested**.
+Open2327RomAdapter has been designed with a Winbond W27C512 EEPROM in mind (and W27*E*512 should work just as well). This is a 64 KB chip (thus it can hold up to 8 ROM images, more than enough for most needs), which is widely available, cheap and electrically erasable, which avoids the need for a clunky UV-eraser. **This is the only part that was thoroughly tested**.
 
 Three 0805 SMD resistors must be soldered to the bottom side of the board, according to the following table:
 
