@@ -22,14 +22,14 @@ Three 0805 SMD resistors must be soldered to the bottom side of the board, accor
 
 | (E)EPROM | Size  | # of images |  R1  |  R2  |  R3  | Switchable pads |
 |----------|-------|-------------|------|------|------|-----------------|
-| 2764     | 8 KB  | 1           | 0    | 0    | 0    | -               |
-| 27128    | 16 KB | 2           | 10k  | 0    | 0    | A13             |
-| 27256    | 32 KB | 4           | 10k  | 10k  | 0    | A13, A14        |
+| 2764     | 8 KB  | 1           | 0R   | 0R   | 0R   | -               |
+| 27128    | 16 KB | 2           | 10k  | 0R   | 0R   | A13             |
+| 27256    | 32 KB | 4           | 10k  | 10k  | 0R   | A13, A14        |
 | 27512*   | 64 KB | 8           | 10k  | 10k  | 10k  | A13, A14, A15   |
 
 \* This is the only configuration that has been tested. **USE OTHER CONFIGURATIONS AT YOUR RISK!**
 
-Note that where the recommended value is 10k, probably any value between 5k and 50k will do.
+Note that `0R` means that you have to install a 0-ohm resistor. Alternatively you can bridge the pads with a solder blob, but don't leave the spot empty. Where the recommended value is `10k`, instead, you have some flexibility: probably any value between 5k and 100k will do.
 
 When flashing the (E)EPROM, make sure that every file is exactly 8192 bytes long and just concatenate them. You don't need to use all of the available space, but keep in mind that the unused address lines are pulled high. This means that if you use a 27512 EPROM with a single image and no switches, for instance, the image must be flashed at $E000 (i.e.: as if it was the last of 8 concatenated images).
 
