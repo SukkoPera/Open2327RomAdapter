@@ -16,20 +16,20 @@ Open2327RomAdapter comes as an adapter PCB that sits inbetween the original sock
 1. You are done! Try to fit the adapter in the socket on your board or solder it down, if you prefer. In both cases, you can trim the pins shorter if you need.
 
 ### Installation
-Open2327RomAdapter has been designed with a Winbond W27C512 (or W27E512, I don't understand what differences they have) EEPROM in mind. This is a 64 KB chip (thus it can hold up to 8 ROM images, more than enough for most needs), which is widely available, cheap and electrically erasable, which avoids the need for a clunky UV-eraser. **This is the only part that was thoroughly tested**.
+Open2327RomAdapter has been designed with a Winbond W27C512 EEPROM in mind (and W27*E*512 should work just as well). This is a 64 KB chip (thus it can hold up to 8 ROM images, more than enough for most needs), which is widely available, cheap and electrically erasable, which avoids the need for a clunky UV-eraser. **This is the only part that was thoroughly tested**.
 
 Three 0805 SMD resistors must be soldered to the bottom side of the board, according to the following table:
 
 | (E)EPROM | Size  | # of images |  R1  |  R2  |  R3  | Switchable pads |
 |----------|-------|-------------|------|------|------|-----------------|
-| 2764     | 8 KB  | 1           | 0    | 0    | 0    | -               |
-| 27128    | 16 KB | 2           | 10k  | 0    | 0    | A13             |
-| 27256    | 32 KB | 4           | 10k  | 10k  | 0    | A13, A14        |
+| 2764     | 8 KB  | 1           | 0R   | 0R   | 0R   | -               |
+| 27128    | 16 KB | 2           | 10k  | 0R   | 0R   | A13             |
+| 27256    | 32 KB | 4           | 10k  | 10k  | 0R   | A13, A14        |
 | 27512*   | 64 KB | 8           | 10k  | 10k  | 10k  | A13, A14, A15   |
 
 \* This is the only configuration that has been tested. **USE OTHER CONFIGURATIONS AT YOUR RISK!**
 
-Note that where the recommended value is 10k, probably any value between 5k and 50k will do.
+Note that `0R` means that you have to install a 0-ohm resistor. Alternatively you can bridge the pads with a solder blob, but don't leave the spot empty. Where the recommended value is `10k`, instead, you have some flexibility: probably any value between 5k and 100k will do.
 
 When flashing the (E)EPROM, make sure that every file is exactly 8192 bytes long and just concatenate them. You don't need to use all of the available space, but keep in mind that the unused address lines are pulled high. This means that if you use a 27512 EPROM with a single image and no switches, for instance, the image must be flashed at $E000 (i.e.: as if it was the last of 8 concatenated images).
 
@@ -63,7 +63,7 @@ You get cheap, professionally-made and good quality PCBs, I get some credit that
 
 Also, if you still have to register to that site, [you can use this link](https://www.pcbway.com/setinvite.aspx?inviteid=41100) to get some bonus initial credit (and yield me some more).
 
-Again, if you want to use another manufacturer, feel free to, don't feel obligated :). But then, you can buy me a coffee:
+Again, if you want to use another manufacturer, feel free to, don't feel obligated :). But then you can buy me a coffee if you want:
 
 <a href='https://ko-fi.com/L3L0U18L' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi2.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
