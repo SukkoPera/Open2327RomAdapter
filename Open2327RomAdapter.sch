@@ -1,12 +1,11 @@
 EESchema Schematic File Version 4
-LIBS:Open2327RomAdapter-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Open2327RomAdapter: C64 ROM 24 -> EPROM 28 Pin Adapter"
-Date "2018-01-05"
+Date "2020-04-16"
 Rev "3"
 Comp "SukkoPera"
 Comment1 "https://ist.uwaterloo.ca/~~schepers/sockets.html"
@@ -219,8 +218,6 @@ Wire Wire Line
 Wire Wire Line
 	5270 2350 3350 2350
 Wire Wire Line
-	3350 2350 3350 3500
-Wire Wire Line
 	3350 3500 6300 3500
 Wire Wire Line
 	6300 3500 6300 4700
@@ -417,4 +414,53 @@ F 3 "" H 10890 6395 60  0001 C CNN
 	0    1    1    0   
 $EndComp
 NoConn ~ 10890 6245
+Wire Wire Line
+	3350 3440 3350 3500
+$Comp
+L Jumper:Jumper_2_Bridged JP1
+U 1 1 5E98DDF8
+P 3350 3240
+F 0 "JP1" V 3304 3298 50  0000 L CNN
+F 1 "JUMPER_4K_SW" V 3395 3298 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 3350 3240 50  0001 C CNN
+F 3 "~" H 3350 3240 50  0001 C CNN
+	1    3350 3240
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J1
+U 1 1 5E9A2BF5
+P 3550 2995
+F 0 "J1" H 3522 2927 50  0000 R CNN
+F 1 "CONN_A12" H 3522 3018 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 3550 2995 50  0001 C CNN
+F 3 "~" H 3550 2995 50  0001 C CNN
+	1    3550 2995
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5E9B71C8
+P 3615 2785
+F 0 "R4" V 3570 2945 50  0000 C CNN
+F 1 "10k" V 3615 2785 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3545 2785 50  0001 C CNN
+F 3 "~" H 3615 2785 50  0001 C CNN
+	1    3615 2785
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3350 2350 3350 2785
+Wire Wire Line
+	3465 2785 3350 2785
+Connection ~ 3350 2785
+Wire Wire Line
+	3350 2785 3350 2995
+Wire Wire Line
+	3765 2785 3850 2785
+Wire Wire Line
+	3850 2785 3850 2650
+Connection ~ 3350 2995
+Wire Wire Line
+	3350 2995 3350 3040
 $EndSCHEMATC
