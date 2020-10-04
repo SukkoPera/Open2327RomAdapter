@@ -1,7 +1,7 @@
 # Open2327RomAdapter
 Open2327RomAdapter is an Open Hardware adapter PCB that allows the use of a 27xxx EPROM in place of a 2364 PROM. This is mainly useful for replacing the KERNAL and other ROMs in VIC-20 and Commodore 64 home computers and 1541 drives.
 
-![Board](https://raw.githubusercontent.com/SukkoPera/Open2327RomAdapter/master/doc/render-top.png)
+![Board](https://raw.githubusercontent.com/SukkoPera/Open2327RomAdapter/master/img/render-top.png)
 
 ## Summary
 The KERNAL ROM in a Commodore 64 is a 2364 model (8 KB), which comes in a 24-pin package. In some cases it is necessary to replace it, but 24-pin EPROMs are not easily available. Besides, in some cases you want to have multiple KERNAL ROMs that you can select with a switch (think about [JiffyDOS](http://www.go4retro.com/products/jiffydos/)).
