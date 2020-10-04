@@ -1,5 +1,5 @@
 # Open2327RomAdapter
-Open2327RomAdapter is an Open Hardware adapter PCB that allows the use of a 27xxx EPROM in place of a 2364 PROM. This is mainly useful for replacing the KERNAL and other ROMs in VIC-20 and Commodore 64 home computers and 1541 drives.
+Open2327RomAdapter is an Open Hardware adapter PCB that allows the use of a 27xxx EPROM in place of a 2364 and other PROMs. This is mainly useful for replacing the KERNAL and other ROMs in VIC-20 and Commodore 64 home computers and 1541 drives.
 
 ![Board](https://raw.githubusercontent.com/SukkoPera/Open2327RomAdapter/master/img/render-top.png)
 
@@ -7,8 +7,6 @@ Open2327RomAdapter is an Open Hardware adapter PCB that allows the use of a 27xx
 The KERNAL ROM in a Commodore 64 is a 2364 model (8 KB), which comes in a 24-pin package. In some cases it is necessary to replace it, but 24-pin EPROMs are not easily available. Besides, in some cases you want to have multiple KERNAL ROMs that you can select with a switch (think about [JiffyDOS](http://www.go4retro.com/products/jiffydos/)).
 
 Open2327RomAdapter comes as an adapter PCB that sits inbetween the original socket and the new chip and solves both those problems, by allowing the use of 28-pin EPROMs, which are cheaper and much more common. It also allows the use of EPROMs bigger than the original ROM, with solder pads where switches can be wired to allow the selection of a particular ROM.
-
-Open2327RomAdapter can also be used to replace other ROMs, such as those in the VIC-20, the C64 Character ROM or the ROM in Commodore 1541 drive.
 
 ## Assembly
 1. Solder the R1-R3 0805 SMD resistors first (Note: do NOT install R4, see below). My suggested technique is as follows: put a small blob of solder on one of the pads, then grab a resistor with tweezers, reheat the solder and slide the resistor into it, keeping it flat on the board. Hold it in place with your tweezers and take the iron away. If you didn't place it straight, reheat and correct with the tweezers. Finally solder the other end. It's not that hard, you just need to practice a few times.
@@ -83,5 +81,5 @@ The following links were useful during the development of this project:
 - https://ist.uwaterloo.ca/~schepers/roms.html
 - https://ist.uwaterloo.ca/~schepers/sockets.html
 - http://smisioto.no-ip.org/elettronica/kicad/kicad.htm
-
-Also thanks to Tim Abraham for suggesting and testing the A12 hack.
+Andre Miller helped with the testing.
+Tim Abraham suggested and tested the A12 hack.
