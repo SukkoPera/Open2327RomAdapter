@@ -81,5 +81,7 @@ The following links were useful during the development of this project:
 - https://ist.uwaterloo.ca/~schepers/roms.html
 - https://ist.uwaterloo.ca/~schepers/sockets.html
 - http://smisioto.no-ip.org/elettronica/kicad/kicad.htm
-Andre Miller helped with the testing.
-Tim Abraham suggested and tested the A12 hack.
+
+The following people contributed work:
+- Andre Miller helped with the testing.
+- Tim Abraham suggested and tested the A12 hack.
