@@ -8,7 +8,7 @@ The KERNAL ROM in a Commodore 64 is a 2364 model (8 KB), which comes in a 24-pin
 
 Open2327RomAdapter comes as an adapter PCB that sits inbetween the original socket and the new chip and solves both those problems, by allowing the use of 28-pin EPROMs, which are cheaper and much more common. It also allows the use of EPROMs bigger than the original ROM, with solder pads where switches can be wired to allow the selection of a particular ROM.
 
-Open2327RomAdapter can also be used to replace other ROMs, such as those in the VIC-20, the C64 Character ROM or the ROM in Commodore 1541 drive (think JiffyDOS).
+Open2327RomAdapter can also be used to replace other ROMs, such as those in the VIC-20, the C64 Character ROM or the ROM in Commodore 1541 drive.
 
 ## Assembly
 1. Solder the R1-R3 0805 SMD resistors first (Note: do NOT install R4, see below). My suggested technique is as follows: put a small blob of solder on one of the pads, then grab a resistor with tweezers, reheat the solder and slide the resistor into it, keeping it flat on the board. Hold it in place with your tweezers and take the iron away. If you didn't place it straight, reheat and correct with the tweezers. Finally solder the other end. It's not that hard, you just need to practice a few times.
@@ -41,9 +41,9 @@ To switch between ROMs, you will need one or more switches. Every switch must co
 
 ### Replacing 2332 ROMs
 2332 ROMs only hold 4 Kb of data. This means that you can switch among even more ROM images if you use a bigger EPROM. In order to do this, you will need to free the A12 address line, which requires a few extra steps:
-1. Solder in the R4 resistor.
-1. Open the JP1 jumper.
-1. Solder another switch to the A12 pad on the bottom of the board.
+1. Solder a 10k resistor at R4.
+1. Cut the JP1 jumper open.
+1. Solder another switch between the A12 pad on the bottom of the board and ground.
 
 **IMPORTANT: ALWAYS TURN YOUR C64 OFF BEFORE MOVING THE ROM SELECTION SWITCH(ES).**
 
